@@ -1,0 +1,144 @@
+.product-body{
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(246, 249, 252);
+}
+
+.product-nav {
+  height: 40px;
+  background-color: rgb(54, 50, 51);
+}
+
+
+.product-nav > a{
+  color: white;
+  text-decoration: none;
+  margin: 1vh;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.product-header{
+  height: 55vh;
+}
+
+.header-img{
+  width: 100%;
+  height: 50vh;
+  box-shadow: 1px 1px 2px 2px #eef3f3;
+}
+
+
+.container{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 4fr));
+  grid-auto-rows: 2fr;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product{
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  box-shadow: 1px 1px 2px 2px #fbffff;
+  height: 80vh;
+  /* background-color: #f2efe6; */
+  width: 100%;
+}
+
+
+
+span{
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 60vh;
+}
+
+.product-img{
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: 40vh 100%;
+}
+
+.product-para{
+  padding-top: 10px;
+  height: 20vh;
+  width: 100%;
+  font-size: 20px;
+  line-height: 25px;
+  color: rgb(54, 50, 51);
+  font-family: 'Roboto Slab', serif;
+}
+
+.product span a:hover :not(img){
+    opacity: 1;
+  }
+
+
+button{
+  background-color: #1e3546;
+}
+
+.donate-div{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.donate-div > a{
+  text-decoration: none;
+  background-color: #1e3546;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.donate-div > a:hover{
+  background-color: #294b64;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .product-header{
+    height: 33vh;
+  }
+
+  .header-img{
+    height: 30vh;
+  }
+
+  .product{
+    height: 75vh;
+
+  }
+
+  .product-para{
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .container{
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-img{
+    width: 80%;
+    height: 40vh;
+  }
+
+}
+
+
+
